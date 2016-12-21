@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>558da063-48b4-48d9-a731-e018c03664a5</ProjectGuid>
+    <ProjectGuid>79ea430e-f3fc-4e76-9b2e-c51506f1335b</ProjectGuid>
     <RootNamespace>ManageStorageAccount</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
