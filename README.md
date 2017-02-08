@@ -6,12 +6,12 @@ author: selvasingh
 
 #Getting Started with Storage - Manage Storage Account - in .Net #
 
-      Azure Storage sample for managing storage accounts -
-       - Create a storage account
-       - Get | regenerate storage account access keys
-       - Create another storage account
-       - List storage accounts
-       - Delete a storage account.
+          Azure Storage sample for managing storage accounts -
+           - Create a storage account
+           - Get | regenerate storage account access keys
+           - Create another storage account
+           - List storage accounts
+           - Delete a storage account.
 
 
 ## Running this Sample ##
