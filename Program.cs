@@ -2,10 +2,11 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent.Core;
+using Microsoft.Azure.Management.ResourceManager.Fluent;
+using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
 using Microsoft.Azure.Management.Samples.Common;
 using System;
+using System.Linq;
 
 namespace ManageStorageAccount
 {
@@ -75,7 +76,7 @@ namespace ManageStorageAccount
 
                 var storageAccounts = azure.StorageAccounts;
 
-                var accounts = storageAccounts.ListByGroup(rgName);
+                var accounts = storageAccounts.ListByResourceGroup(rgName);
 
                 foreach (var account in accounts)
                 {
@@ -85,9 +86,9 @@ namespace ManageStorageAccount
                 // ============================================================
                 // Delete a storage account
 
-                Utilities.Log($"Deleting a storage account - {accounts[0].Name} created @ {accounts[0].CreationTime}");
+                Utilities.Log($"Deleting a storage account - {accounts.ElementAt(0).Name} created @ {accounts.ElementAt(0).CreationTime}");
 
-                azure.StorageAccounts.DeleteById(accounts[0].Id);
+                azure.StorageAccounts.DeleteById(accounts.ElementAt(0).Id);
 
                 Utilities.Log("Deleted storage account");
             }
@@ -116,7 +117,7 @@ namespace ManageStorageAccount
 
                 var azure = Azure
                     .Configure()
-                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.BASIC)
+                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                     .Authenticate(credentials)
                     .WithDefaultSubscription();
 
