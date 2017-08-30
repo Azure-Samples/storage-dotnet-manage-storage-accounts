@@ -1,0 +1,4 @@
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\bin\Debug\net452\ManageStorageAccount.runtimeconfig.json
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\bin\Debug\net452\ManageStorageAccount.runtimeconfig.dev.json
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\obj\Debug\net452\ManageStorageAccount.csproj.ManageStorageAccount.exe.config
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\obj\Debug\net452\ManageStorageAccount.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2 @@
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\bin\Debug\netstandard1.6\ManageStorageAccount.deps.json
+C:\Sources\dotnet-samples\storage-dotnet-manage-storage-accounts\obj\Debug\netstandard1.6\ManageStorageAccount.csproj.CoreCompileInputs.cache
