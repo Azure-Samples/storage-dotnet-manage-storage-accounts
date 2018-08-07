@@ -1,10 +1,10 @@
 ---
 services: Storage
-platforms: .Net
+platforms: dotnet
 author: selvasingh
 ---
 
-# Getting Started with Storage - Manage Storage Account - in .Net #
+# Getting started on managing storage accounts in C# #
 
           Azure Storage sample for managing storage accounts -
            - Create a storage account
@@ -18,7 +18,7 @@ author: selvasingh
 
 To run this sample:
 
-Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/AUTH.md).
+Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
     git clone https://github.com/Azure-Samples/storage-dotnet-manage-storage-accounts.git
 
