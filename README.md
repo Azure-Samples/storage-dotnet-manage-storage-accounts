@@ -1,7 +1,7 @@
 ---
 services: Storage
 platforms: dotnet
-author: selvasingh
+author: yaohaizh
 ---
 
 # Getting started on managing storage accounts in C# #
