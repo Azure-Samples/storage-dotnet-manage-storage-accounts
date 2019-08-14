@@ -1,7 +1,9 @@
 ---
 page_type: sample
-languages: java
-products: azure
+languages:
+- java
+products:
+- azure
 services: Storage
 platforms: dotnet
 author: yaohaizh
@@ -26,9 +28,9 @@ Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an aut
     git clone https://github.com/Azure-Samples/storage-dotnet-manage-storage-accounts.git
 
     cd storage-dotnet-manage-storage-accounts
-  
+
     dotnet build
-    
+
     bin\Debug\net452\ManageStorageAccount.exe
 
 ## More information ##
