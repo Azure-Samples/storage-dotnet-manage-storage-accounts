@@ -4,19 +4,19 @@ languages:
 - csharp
 products:
 - azure
-services: Storage
-platforms: dotnet
-author: yaohaizh
+extensions:
+- services: Storage
+- platforms: dotnet
 ---
 
 # Getting started on managing storage accounts in C# #
 
-          Azure Storage sample for managing storage accounts -
-           - Create a storage account
-           - Get | regenerate storage account access keys
-           - Create another storage account
-           - List storage accounts
-           - Delete a storage account.
+ Azure Storage sample for managing storage accounts -
+  - Create a storage account
+  - Get | regenerate storage account access keys
+  - Create another storage account
+  - List storage accounts
+  - Delete a storage account.
 
 
 ## Running this Sample ##
