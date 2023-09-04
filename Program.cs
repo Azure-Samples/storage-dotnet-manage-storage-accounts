@@ -28,7 +28,7 @@ namespace ManageStorageAccount
             try
             {
                 // ============================================================
-
+                
                 // Get default subscription
                 SubscriptionResource subscription = await client.GetDefaultSubscriptionAsync();
                 var rgName = Utilities.CreateRandomName("StorageAccountRG");
@@ -51,7 +51,7 @@ namespace ManageStorageAccount
 
                 // ============================================================
 
-                // Get | regenerate storage account access keys
+                // Get | regenerate storage account access keys.
                 Utilities.Log("Getting storage account access keys...");
                 var storageAccountKeys = storageAccount.GetKeys();
                 Utilities.Log("Got storage account access keys");
