@@ -51,7 +51,7 @@ namespace ManageStorageAccount
 
                 // ============================================================
 
-                // Get | regenerate storage account access keys.
+                // Get | regenerate storage account access keys
                 Utilities.Log("Getting storage account access keys...");
                 var storageAccountKeys = storageAccount.GetKeys();
                 Utilities.Log("Got storage account access keys");
@@ -61,10 +61,12 @@ namespace ManageStorageAccount
                 {
                     if (i == 0)
                     {
-                        Utilities.Log("Regenerated first storage account access key : "+key.Value);
+                        var keycontent = new StorageAccountRegenerateKeyContent(key.KeyName);
+                        var regeneratekey = storageAccount.RegenerateKey(keycontent);
                     }
                     i++;
                 }
+                Utilities.Log("Regenerated first storage account access key");
 
                 // ============================================================
 
@@ -121,13 +123,7 @@ namespace ManageStorageAccount
 
                 // Delete a storage account
                 Utilities.Log($"Deleting a storage account - {accounts.ElementAt(0).Data.Name} created @ {accounts.ElementAt(0).Data.KeyCreationTime.Key1}...");
-                if (resourceGroup != null)
-                {
-                    await foreach (var account in resourceGroup.GetStorageAccounts())
-                    {
-                        await account.DeleteAsync(WaitUntil.Completed);
-                    }
-                }
+                accounts.ElementAt(0).DeleteAsync(WaitUntil.Completed).Wait();
                 Utilities.Log($"Deleted a storage account");
             }
             finally
